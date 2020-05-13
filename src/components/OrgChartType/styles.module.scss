@@ -1,0 +1,16 @@
+.container {
+    width: 79px;
+    height: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    border: 1px solid transparent;
+}
+
+.container:hover {
+    color: #0154FF;
+    border: 1px solid #0154FF;
+    cursor: pointer;
+}

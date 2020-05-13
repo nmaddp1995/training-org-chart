@@ -1,12 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Backend from 'react-dnd-html5-backend'
+import { DndProvider } from 'react-dnd'
+
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import TestDrag from './OrgChart/TestDrag';
+import CustomNodeChart from './MyReactOrgChart/CustomNodeChart';
+import BasicPrimitiveChart from './MyReactOrgChart/BasicPrimitiveChart';
+import ReactOrgTree from './ReactOrgTree';
+import OrgChartContainer from './OrgChartContainer';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <DndProvider backend={Backend}>
+      {/* <CustomNodeChart /> */}
+      {/* <ReactOrgTree /> */}
+      <OrgChartContainer />
+    </DndProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

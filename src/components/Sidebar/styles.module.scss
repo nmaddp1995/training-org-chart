@@ -1,0 +1,21 @@
+.sidebar {
+    width: 300px;
+    z-index: 1;
+    background-color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    background-color: #F2F2F2;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 10px 15px;
+}
+
+.listType {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+}
